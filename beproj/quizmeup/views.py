@@ -1,18 +1,12 @@
-from django.shortcuts import render,HttpResponse
-from django.shortcuts import render, redirect
-from django.shortcuts import render_to_response,redirect
+from django.shortcuts import render,HttpResponse, redirect, render_to_response
 from django.template import RequestContext
 from django.contrib.auth.decorators import login_required
-from django.contrib.auth import authenticate, login, logout
-from django.contrib.auth.forms import UserCreationForm, AuthenticationForm
-from django.contrib.auth import authenticate
+from django.contrib.auth import authenticate, login, logout, get_user_model
+from django.contrib.auth.forms import UserCreationForm, AuthenticationForm, User
 from .forms import RegisterForm
 from django import forms
 from django.contrib.auth.forms import ReadOnlyPasswordHashField
-from django.contrib.auth import authenticate, login
 from .models import User, StudentRecord
-from django.contrib.auth.forms import User
-from django.contrib.auth import get_user_model
 User = get_user_model()
 
 # Create your views here.
