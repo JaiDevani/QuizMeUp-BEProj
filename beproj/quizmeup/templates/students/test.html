@@ -1,0 +1,60 @@
+{% load static %}
+
+  {% include "partials/head.html" %}
+	  <div class="py-2 bg-primary">
+    	<div class="container">
+    		<div class="row no-gutters d-flex align-items-start align-items-center px-3 px-md-0">
+	    		<div class="col-lg-12 d-block">
+		    		<div class="row d-flex">
+					    <div class="col-md pr-4 d-flex topper align-items-center">
+					    	<div class="icon bg-secondary mr-2 d-flex justify-content-center align-items-center"><span class="icon-paper-plane"></span></div>
+						    <span class="text">youremail@email.com</span>
+					    </div>
+					    <div class="col-md pr-4 d-flex topper align-items-center">
+					    	<div class="icon bg-tertiary mr-2 d-flex justify-content-center align-items-center"><span class="icon-phone2"></span></div>
+						    <span class="text">Contact Number</span>
+					    </div>
+				    </div>
+			    </div>
+		    </div>
+		  </div>
+    </div>
+	{% include "partials/u_navbar.html"%}
+    <!-- END nav -->
+		
+		<section class="ftco-section ftco-no-pt ftc-no-pb">
+			<div class="container">
+				<div id="content" class="questionarea">
+                    <div class="quiztitle"><span class="matemtext">Subject A</span><br>
+                </div>
+                <!-- <div class="questionnumber">Topic<br></div> -->
+                <div class="questionbody"><br>
+                    <div class="questionimagezoom"><img class="imagecontrol" border="0" onclick="javascript:QWUtils.imageZoomMouseClick(this);" src="{% static "images/ai.jpg" %}"><br clear="all">
+                    </div>
+                    <div class="questioncontainer">
+                        <div class="questionstem">
+                            <div class="questiontext"><h3>1. What does the above image resemble ?</h3><br>
+                            </div>
+                        </div>
+                        <br>
+                        <ul>
+                            <ul><span>
+                            <label><input type="radio" name="optradio" checked  class="mcradio">Brain</label>
+                        </span></ul>
+                        <ul><span>
+                            <label><input type="radio" name="optradio" checked  class="mcradio">Heart</label>
+                        </span>
+                        </ul>
+                        <ul><span>
+                            <label><input type="radio" name="optradio" checked  class="mcradio">Spine</label>
+                        </span></ul>
+                        <ul><span>
+                            <label><input type="radio" name="optradio" checked  class="mcradio">None</label>
+                        </span></ul></ul>
+                    </div>
+                </div>
+                <div class="questionvalue">(10 points)</div></div>
+			</div>
+		</section>
+		
+	{% include "partials/tail.html"%}

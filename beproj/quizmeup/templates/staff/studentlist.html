@@ -1,0 +1,72 @@
+{% load static %}
+
+  {% include "partials/head.html" %}
+	  <div class="py-2 bg-primary">
+    	<div class="container">
+    		<div class="row no-gutters d-flex align-items-start align-items-center px-3 px-md-0">
+	    		<div class="col-lg-12 d-block">
+		    		<div class="row d-flex">
+					    <div class="col-md pr-4 d-flex topper align-items-center">
+					    	<div class="icon bg-secondary mr-2 d-flex justify-content-center align-items-center"><span class="icon-paper-plane"></span></div>
+						    <span class="text">youremail@email.com</span>
+					    </div>
+					    <div class="col-md pr-4 d-flex topper align-items-center">
+					    	<div class="icon bg-tertiary mr-2 d-flex justify-content-center align-items-center"><span class="icon-phone2"></span></div>
+						    <span class="text">Contact Number</span>
+					    </div>
+				    </div>
+			    </div>
+		    </div>
+		  </div>
+    </div>
+	{% include "partials/h_navbar.html"%}
+    <!-- END nav -->
+
+  
+    <section class="ftco-services ftco-no-pb">
+        
+        <div class="container">
+            <h2>Student Scores</h2>         
+            <table class="table">
+              <thead>
+                <tr>
+                  <th>Email</th>
+                  <th>subject_a</th>
+                  <th>subject_b</th>
+                </tr>
+              </thead>
+              <tbody>
+                {% for s in students %}
+                <tr>
+                  <td>{{s.email}}</td>
+                  <td>{{s.subject_a}}</td>
+                  <td>{{s.subject_b}}</td>
+                </tr>
+                {% endfor %}
+              </tbody>
+            </table>
+        </div>
+	</section>
+		
+	{% include "partials/tail.html"%}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
